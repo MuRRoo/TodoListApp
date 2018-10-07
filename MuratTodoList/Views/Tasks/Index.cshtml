@@ -132,7 +132,7 @@
     <ul id="myUL">
         @foreach (var item in Model)
         {
-            <li @(item.IsChecked == true ? "class=checked" : "")> @item.Name <span class="close" data-id="@item.Id">×</span>
+            <li @(item.IsChecked ? "class=checked" : "")> @item.Name <span class="close" data-id="@item.Id">×</span>
             </li>
         }
     </ul>
