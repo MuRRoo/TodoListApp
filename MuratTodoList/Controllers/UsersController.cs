@@ -10,7 +10,6 @@ namespace MuratTodoList.Controllers
     {
         private TodoListContext db = new TodoListContext();
 
-        // GET: User
         public ActionResult Index()
         {
             return View(db.Users.ToList());
